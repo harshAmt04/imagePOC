@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomActivityIndicatorView" customModule="imageGenationDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="activityLoaderView" destination="YRd-X4-hXK" id="cIz-lP-vuX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWy-DM-XdN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" insetsLayoutMarginsFromSafeArea="NO" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YRd-X4-hXK">
+                    <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                    <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning Image..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBR-pe-aDI">
+                    <rect key="frame" x="135.5" y="486.5" width="143" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="LWy-DM-XdN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7yt-Bn-m1u"/>
+                <constraint firstAttribute="bottom" secondItem="LWy-DM-XdN" secondAttribute="bottom" id="8EZ-p6-S5g"/>
+                <constraint firstItem="YRd-X4-hXK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LTB-BL-aO9"/>
+                <constraint firstItem="YRd-X4-hXK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="LYw-hl-pgr"/>
+                <constraint firstItem="lBR-pe-aDI" firstAttribute="top" secondItem="YRd-X4-hXK" secondAttribute="bottom" constant="20" id="db3-eI-Phf"/>
+                <constraint firstAttribute="trailing" secondItem="LWy-DM-XdN" secondAttribute="trailing" id="eJX-Xw-Mn3"/>
+                <constraint firstItem="LWy-DM-XdN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fBL-qI-iwa"/>
+                <constraint firstItem="lBR-pe-aDI" firstAttribute="centerX" secondItem="YRd-X4-hXK" secondAttribute="centerX" id="yaU-2v-CkK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-145" y="75"/>
+        </view>
+    </objects>
+</document>
