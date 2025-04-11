@@ -488,3 +488,18 @@ extension ViewController{
     }
     
 }
+
+
+class SomeNewViewController : UIViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    private func IAmUsingThisFunction() {
+        
+    }
+    
+}
