@@ -495,9 +495,9 @@ class SomeNewVC : UIViewController {
         
     }
     
-    func IAmTestingThis()
-    {
-        
+    func iAmTestingThis(){
+        // This is a method to test
+        // the new static analyzer
     }
     
 }
